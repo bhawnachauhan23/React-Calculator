@@ -29,7 +29,7 @@ let Calculator = () => {
     "0",
     ".",
     "+/-",
-    "Result"
+    "Result",
   ];
 
   // defining click handler function for buttons
@@ -100,11 +100,13 @@ let Calculator = () => {
         <div className="keypad">
           {" "}
           {/* keypad container */}
-          {arr.map((
-            item // mapping the array of button values to Button components with clickHandler function as prop
-          ) => (
-            <Button clickHandler={clickHandler} value={item} />
-          ))}
+          {arr.map(
+            (
+              item // mapping the array of button values to Button components with clickHandler function as prop
+            ) => (
+              <Button key={item} clickHandler={clickHandler} value={item} />
+            )
+          )}
         </div>
       </div>
     </>
