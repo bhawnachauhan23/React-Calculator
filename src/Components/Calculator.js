@@ -93,13 +93,11 @@ let Calculator = () => {
   return (
     <>
       <div className="container">
-        {" "}
-        {/* main container */}
+         {/* main container */}
         <Display answer={answer} query={query} />{" "}
         {/* OutputScreen component with answer and query state as props */}
         <div className="keypad">
-          {" "}
-          {/* keypad container */}
+           {/* keypad container */}
           {arr.map(
             (
               item // mapping the array of button values to Button components with clickHandler function as prop

@@ -1,17 +1,21 @@
+/* Set the text alignment of the App class to center */
 .App {
   text-align: center;
 }
 
+/* Set the background color of the body to a shade of gray */
 body {
   background-color: rgb(168, 164, 164);
 }
 
+/* Use CSS grid to create a keypad with 4 columns and auto rows */
 .keypad {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-auto-rows: minmax(60px, auto);
 }
 
+/* Set the position, size, and style of the calculator container */
 .container {
   top: 50%;
   left: 50%;
@@ -25,6 +29,7 @@ body {
   box-shadow: 5px 10px 40px 20px rgb(52, 52, 53);
 }
 
+/* Set the style of the text input field */
 input[type="text"] {
   height: 35px;
   width: 290px;
@@ -37,6 +42,7 @@ input[type="text"] {
   letter-spacing: 1px;
 }
 
+/* Set the style of the button input fields */
 input[type="button"] {
   margin: 5px;
   border-radius: 5px;
@@ -46,15 +52,19 @@ input[type="button"] {
   font-size: 1.2rem;
   box-shadow: 2px 2px 2px 2px rgb(82, 82, 85);
 }
+
+/* Set the hover style of the button input fields */
 input[type="button"]:hover {
   background: rgba(236, 232, 232, 0.33);
   font-size: 1.3rem;
 }
 
+/* Set the grid position of the Delete button */
 #Delete {
   grid-column: 1/3;
 }
 
+/* Set the grid position of the Result button */
 #Result {
   grid-column: 1/5;
 }
