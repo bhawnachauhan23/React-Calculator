@@ -73,8 +73,8 @@ let Calculator = () => {
       case "Delete": {
         // if button value is "Delete"
         try {
-          // removing the last character from query string using substr() function
-          setQuery(query.substr(0, query.length - 1));
+          // removing the last character from query string using substring() function
+          setQuery(query.substring(0, query.length - 1));
         } catch (err) {
           // if there is an error, setting both query and answer state to empty string
           setQuery("");
@@ -92,13 +92,13 @@ let Calculator = () => {
 
   return (
     <>
+      {/* main container */}
       <div className="container">
-         {/* main container */}
+         {/* Display component with answer and query state as props */}
         <Display answer={answer} query={query} />{" "}
-        {/* OutputScreen component with answer and query state as props */}
+          {/* keypad container */}
         <div className="keypad">
-           {/* keypad container */}
-          {arr.map(
+           {arr.map(
             (
               item // mapping the array of button values to Button components with clickHandler function as prop
             ) => (
